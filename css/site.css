@@ -5,6 +5,7 @@
 /* we can select an html element tag, in this case "body" will apply to the whole document */
 body {
   background-image: url(https://background-tiles.com/overview/black/patterns/large/1012.png);
+  background-size: 77px auto;
 }
 
 /* we can have rules apply to multiple elements at the same time with commas */

@@ -1,4 +1,8 @@
 /* Here we can set styles for this lab page that we don't want to effect others pages */
+body {
+  background-image: url(https://background-tiles.com/overview/black/patterns/large/1012.png);
+  background-size: 77px auto;
+}
 
 #content {
   margin: 10px;

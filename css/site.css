@@ -10,15 +10,15 @@ body {
 
 /* we can have rules apply to multiple elements at the same time with commas */
 h1, h2, h3, h4 {
-  font-family: 'Londrina Sketch', cursive;
+  font-family:  'Trebuchet MS', sans-serif;
   font-weight: bold;
   margin: 0;
 }
 
 /* and we can have rules that overlap other rules, both take effect */
-/*h1 {
-  font-size: 200%;
-}*/
+p {
+  font-family:  'Trebuchet MS', sans-serif;
+}
 
 /* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
 #content {

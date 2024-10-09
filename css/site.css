@@ -9,13 +9,14 @@ body {
 }
 
 /* we can have rules apply to multiple elements at the same time with commas */
-h1,h2,h3 {
-  font-family: cursive;
+h1, h2, h3, h4 {
+  font-family: 'Londrina Sketch', cursive;
+  font-weight: bold;
+  margin: 0;
 }
 
 /* and we can have rules that overlap other rules, both take effect */
 h1 {
-  word-spacing: 5px;
   font-size: 200%;
 }
 

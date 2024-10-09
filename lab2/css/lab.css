@@ -1,6 +1,6 @@
 /* Here we can set styles for this lab page that we don't want to effect others pages */
 body {
-  background-image: url(https://media.tenor.com/O_x4UCmt5p0AAAAi/among-us-twerk.gif);
+  background-image: url(../img/AmogusTwerk.gif);
   background-size: 77px auto;
 }
 
@@ -17,4 +17,15 @@ body {
     margin-bottom: 10px;
     border: solid 1px #888;
     background-color: #DDD8C4;
-  }
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Trebuchet MS', sans-serif;
+  font-weight: bold;
+  margin: 0;
+}
+
+/* and we can have rules that overlap other rules, both take effect */
+p {
+  font-family: 'Trebuchet MS', sans-serif;
+}

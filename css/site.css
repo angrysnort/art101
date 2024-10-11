@@ -21,7 +21,8 @@ p {
 }
 
 /* the hashtag in a CSS selector selects an element by id, e.g., id="content" */
-#content {
+#large-content-box {
+  border-radius: 25px;
   margin: 10px;
   padding: 10px;
   border: solid 1px #888;
@@ -29,7 +30,8 @@ p {
 }
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
-.minor-section {
+.inside-of-a-section {
+  border-radius: 25px;
   padding: 10px;
   margin-bottom: 10px;
   border: solid 1px #888;

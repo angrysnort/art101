@@ -11,6 +11,7 @@ body {
     align-items: center;
     height: 100vh;
     background-image: url(https://background-tiles.com/overview/black/patterns/large/1012.png);
+    background-size: 77px auto;
 }
 
 .container {

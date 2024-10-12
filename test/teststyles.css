@@ -99,7 +99,9 @@ body {
     cursor: pointer;
     transition: background-color 0.3s;
     width: 90%;
-    margin: 0 auto;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
 }
 
 .link-button:hover {

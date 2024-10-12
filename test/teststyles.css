@@ -45,7 +45,7 @@ body {
     height: 150px;
     border-radius: 50%;
     background-color: #ccc;
-    margin-bottom: 20px auto;
+    margin-bottom: 20px;
     object-fit: cover;
     display: block;
 }
@@ -97,9 +97,9 @@ body {
     border-radius: 10px;
     cursor: pointer;
     transition: background-color 0.3s;
-    width: 90%;
+    width: 80%;
     margin: 0 auto;
-    justify-content: center;
+    justify-self: center;
     align-items: center;
 }
 

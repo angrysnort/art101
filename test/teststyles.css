@@ -45,7 +45,7 @@ body {
     height: 150px;
     border-radius: 50%;
     background-color: #ccc;
-    margin-bottom: 10px auto;
+    margin-bottom: 20px auto;
     object-fit: cover;
     display: block;
 }
@@ -84,10 +84,9 @@ body {
 .button-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 25px;
+    gap: 20px;
     width: 100%;
     justify-content: center;
-    align-items: center;
 }
 
 .link-button {
@@ -99,7 +98,7 @@ body {
     cursor: pointer;
     transition: background-color 0.3s;
     width: 90%;
-    margin: auto;
+    margin: 0 auto;
     justify-content: center;
     align-items: center;
 }

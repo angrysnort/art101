@@ -86,7 +86,7 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     width: 100%;
-    justify-content: center;
+    justify-items: center;
 }
 
 .link-button {
@@ -98,7 +98,6 @@ body {
     cursor: pointer;
     transition: background-color 0.3s;
     width: 80%;
-    margin: 0 auto;
     justify-self: center;
     align-items: center;
 }

@@ -86,7 +86,8 @@ body {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     width: 100%;
-    justify-content: center;
+    text-align:center;
+    display:block;
 }
 
 .link-button {

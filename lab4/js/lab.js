@@ -1,21 +1,20 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
+// Rock-Paper-Scissors (Fire Emblem Edition)
+// An implementation of the game
+// Corbin Wilhelm <ljwilhel@ucsc.edu>
+// Lucas Larkin <djlarkin@ucsc.edu>
+// October 2024
 
-// Constants
-
-// Functions
-
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
-}
-
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
-
-// let's get this party started
-main();
+// Print player move/input options:
+  //Axe
+  //Lance
+  //Sword
+//CPU picks an RNG ranging from 1-3.
+  //CPU stores the number. 
+    //Each number relates to a weapon/move.
+      //1: Axe
+      //2: Lance
+      //3: Sword
+//Accept player input.
+//Display CPU and player input simultaneously.
+//Award player one point if winning condition is met (refer to diagram).
+  //Award CPU one point if player losing condition is met.

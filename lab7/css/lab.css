@@ -1,0 +1,29 @@
+/* Here we can set styles for this lab page that we don't want to effect others pages */
+
+/* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+.minor-section {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: solid 1px #888;
+    background-color: #DDD8C4;
+  }
+
+/* The following code is from W3Schools DanCouper on freecodecamp.org: https://forum.freecodecamp.org/t/cannot-figure-out-how-to-align-things-to-center/309174/7 */
+.row {
+  height: 500px;
+  /* divs are block elements, already have width 100% */
+  display: flex;
+  /* stretch the columns to the full height: */
+  align-items: stretch;
+  flex-wrap: nowrap;
+}
+
+.column {
+  /* equalise the widths of the columns: */
+  flex: 1;
+  /* make each column a flex container as well: */
+  display: flex;
+  /* vertically and horizontally centre the child: */
+  justify-content: center;
+  align-items: center;
+}

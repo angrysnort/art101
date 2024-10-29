@@ -3,33 +3,20 @@
 // October 2024
 // License: Public Domain
 
-// Constants
-const myTransport = ["The Bus" , "Dream Car: The Cadillac Hearse"] 
+function allOfItBecauseIDontCare2() {
+  var userName = window.prompt("Please enter your username", "xXTh3Ultim@teG@merXx");
+  console.log("allOfItBecauseIDontCare2 =", allOfItBecauseIDontCare2);
 
-var myMainButAlsoDreamRide = {
-  make: "Cadillac",
-  model: "Hearse",
-  color: "Black",
-  year: 1970,
-  age: function() {
-      return 2024 - this.year;
-  }
+  var stringToArray = userName.split('');
+  console.log("stringToArray =", stringToArray);
+
+  // Thank you to WesBot!
+  var sortedArray = stringToArray.sort((a, b) => a.toLowerCase().localeCompare(b.toLowerCase()));
+  console.log("sortedArray =", sortedArray);
+
+  var arrayToString = sortedArray.join('');
+  console.log("arrayToString =", arrayToString);
+
+  // Thank you to W3Schools!
+  document.getElementById("warranty").innerHTML = "<br>Here's your sorted name, " + userName + ": " + arrayToString + ". Now, would you like to talk about your car's extended warranty? :)";
 }
-
-document.writeln("I only use two kinds of transport: " + myTransport[0] + " and my " + myTransport[1] + "</br>");
-document.writeln("Here's the details for My Dream Ride, which I hope to someday be My Main Ride: <pre></br>", 
-  JSON.stringify(myMainButAlsoDreamRide, null, '\t'), "</pre></br>");
-
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-//function myFunction(param1, param2) {
-  // some code here
-  // return results;
-//}
-
-//function main() {
-  //console.log("Main function started.");
-  // the code that makes everything happen
-//}
-
-// let's get this party started
-//main();

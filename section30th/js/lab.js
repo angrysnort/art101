@@ -1,21 +1,21 @@
-// index.js - purpose and description here
-// Author: Your Name
-// Date:
-
-// Constants
-
-// Functions
-
-// this is an example function and this comment tells what it doees and what parameters are passed to it.
-function myFunction(param1, param2) {
-  // some code here
-  // return results;
+function userInput() {
+  let number;
+  number=window.prompt("Please provide your first variable.");
+  console.log(number);
+  return number
 }
 
-function main() {
-  console.log("Main function started.");
-  // the code that makes everything happen
-}
+let numberFirst = userInput();
+let numberSecond = userInput();
 
-// let's get this party started
-main();
+console.log("numberFirst is " + numberFirst);
+console.log("numberSecon is " + numberSecond);
+
+results=numberFirst + numberSecond;
+
+$(".calculator").append(numberFirst + " + ");
+$(".calculator").append(numberSecond + " = ");
+$(".calculator").append(results);
+
+
+console.log("The result is " + results + " :)");

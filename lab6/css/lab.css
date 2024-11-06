@@ -1,12 +1,6 @@
 /* Here we can set styles for this lab page that we don't want to effect others pages */
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
-.minor-section {
-    padding: 10px;
-    margin-bottom: 10px;
-    border: solid 1px #888;
-    background-color: #DDD8C4;
-  }
 
 /* The following code is from W3Schools DanCouper on freecodecamp.org: https://forum.freecodecamp.org/t/cannot-figure-out-how-to-align-things-to-center/309174/7 */
 .row {

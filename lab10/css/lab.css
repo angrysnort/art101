@@ -1,3 +1,26 @@
 /* Here we can set styles for this lab page that we don't want to effect others pages */
 
 /* the period in a CSS selector selects an element by class, e.g., class="minor-section" */
+.text {
+    max-width: 20%;
+    padding: 5px 10px;
+    border-radius: 15px;
+    color: black;
+    font-family: sans-serif;
+    font-size: 0.8em;
+}
+
+/* Thank you to ChatGPT for this code. To explain: the nth-child pseudoclass calls on specific elements inside of things, such as lists or divs. These specific nth-children are calling upon the odd and even elements of the p class.*/
+/*Apply different alignment styles for alternating text elements*/
+
+.text:nth-child(odd) {
+    align-self: left; 
+    background-color: lightblue;
+    margin-right: auto;
+}
+
+.text:nth-child(even) {
+    align-self: right;
+    background-color: lightgreen;
+    margin-left: auto;
+}

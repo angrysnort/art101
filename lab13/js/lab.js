@@ -3,38 +3,62 @@
 // November 2024
 // License: Public Domain
 
-// FizzBuzz Function
-// This function loops through numbers from 1 to 200 and prints:
-// "Fizz!" if the number is divisible by 3,
-// "Buzz!" if the number is divisible by 5,
-// "Boom!" if the number is divisible by 7,
-// Combines them accordingly if a number is divisible by more than one of 3, 5, or 7.
+// Here is the original code we wrote in class with Wes:
+/*
+for(let i=1;i<+201;i++) {
+  if (i%3 == 0) {
+    console.log("Fizz!");
+  }
+  else if (i%5 == 0) {
+    console.log("Buzz!");
+  }
+  else if (i%7 == 0) {
+    console.log("Boom!");
+  }
+  else if (i%15 == 0) {
+    console.log("FizzBuzz!");
+  }
+  else {
+     console.log(i);
+  }
+}*/
+//~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+// For the sake of submitting SOMETHING on time I had ChatGPT refactor the code we wrote in lecture with Wes while it kept the instructions for the lab in mind. However, I have since gone back and taken the time to understand what the code actually means, because trying to use any version closer to the code Wes wrote for us has led to nothing but errors or nothing showing up.
+// Also, the new code fulfills Task X as a bonus.
 
 function fizzBuzz() {
-  // Initialize a string to store the output
+  // oneLongString needs to start as an empty string so that the function can actually store the additional strings inside of it while also adding/appending Fizz, Buzz, Boom etc. to the numbers that need them.
   let oneLongString = "";
 
-  // Loop through numbers from 1 to 200
-  for (let num = 1; num <= 200; num++) {
-      let str = ""; // Reset str for each number
+  // In the previous function, we just did "If i/num is less than 201." It's more simple to just use "If num is equal to or less than 200."
+  // Here's where it gets complicated, and the reason the code Wes provided in class simply doesn't work for this assignment. If we were to use anything like Wes' code, we'd have to make if/ if else statements for EVERY SINGLE POSSIBLE OUTCOME. So Fizz, Buzz, Boom, FizzBuzz, FizzBoom, BuzzBoom, etc.
+        // Obviously, that's a horrible idea.
 
-      // Check divisibility by 3, 5, or 7 and append corresponding strings
+      // So, instead, it just appends things! If the number in question fulfills multiple conditions, then it will just append new words to the end. This is why the else if statements have been taken away.
+
+  for (let num = 1; num <= 200; num++) {
+
+      // Finally, the 'str' variable needs to start out blank (or, in this case, the number in question and a colon so you can still see the number) so they can be properly appended to.
+      // Prompt 2 for Task X: Defining the str and num constants to make it easier to change values and text.
+      let str = num + ": "; 
+      // Also, we're using absolute comparison (===) instead of loose comparison (==) just to minimize the risk of incorrect output.
       if (num % 3 === 0) {
-          str += "Fizz";
+        str += "Fizz";
       }
       if (num % 5 === 0) {
-          str += "Buzz";
+        str += "Buzz";
       }
       if (num % 7 === 0) {
-          str += "Boom";
+        str += "Boom";
       }
-
-      // If str is empty, just output the number
-      if (str === "") {
-          str = num;
+      // Prompt 1 for Task X: Adding the additonal factor.
+      if (num % 9 === 0) {
+        str += "Bang";
       }
-
-      // Append the result to the output string
+      // If a number doesn't get any Fizz, Buzz, Boom or Bang, it gets crickets.
+      if (str === num + ": ") {
+        str = num + ": <em>crickets</em>";
+      }
       oneLongString += str + "<br>";
   }
 

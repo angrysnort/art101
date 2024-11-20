@@ -59,12 +59,13 @@ function fizzBuzz() {
       if (str === num + ": ") {
         str = num + ": <em>crickets</em>";
       }
+      // And here's where it puts the result into oneLongString with line breaks between each number.
       oneLongString += str + "<br>";
   }
 
-  // Output the result to the div with id "output"
+  // Outputs into the output div.
   $("#output").html(oneLongString);
 }
 
-// Call the function to execute
+// Calls the function, excuting it.
 fizzBuzz();
